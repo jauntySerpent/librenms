@@ -43,6 +43,7 @@ return [
         'CM-SYSTEM-MIB::cmObjectDeletionTrap' => \LibreNMS\Snmptrap\Handlers\AdvaObjectDeletion::class,
         'CM-SYSTEM-MIB::cmSnmpDyingGaspTrap' => \LibreNMS\Snmptrap\Handlers\AdvaSnmpDyingGaspTrap::class,
         'CM-SYSTEM-MIB::cmStateChangeTrap' => \LibreNMS\Snmptrap\Handlers\AdvaStateChangeTrap::class,
+        'CONFIG-MIB::hpSwitchTraps#' => \LibreNMS\Snmptrap\Handlers\HpErrantBpdu::class,
         'CPS-MIB::lowBattery' => LibreNMS\Snmptrap\Handlers\CpLowBattery::class,
         'CPS-MIB::powerRestored' => \LibreNMS\Snmptrap\Handlers\CpPowerRestored::class,
         'CPS-MIB::returnFromChargerFailure' => \LibreNMS\Snmptrap\Handlers\CpUpsRtnChargerFailure::class,
